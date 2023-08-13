@@ -1,0 +1,7 @@
+version: "3"
+services: 
+  little-link:
+    build: .
+    container_name: littlelink-server
+    ports: 
+      - 8889:80
