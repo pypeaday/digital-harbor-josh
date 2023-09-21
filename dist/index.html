@@ -38,13 +38,23 @@
         margin: 0; /* Remove default margin */
       }
 
+      /* Limit the maximum width of the content on larger screens */
+      .container {
+        max-width: 100%; /* Adjust as needed */
+      }
+
+      /* Add padding to create spacing around the content */
+      .column {
+        padding: 20px; /* Adjust as needed */
+      }
+
       /* Add a glow border to the YouTube video */
       iframe {
         border: 5px solid #808080; /* Adjust the color as desired */
         box-shadow: 0 0 15px #808080; /* Adjust the color as desired */
       }
 
-      /* Set a fixed width and height for the buttons */
+      /* Set the width of the buttons to match the YouTube video */
       .button {
         width: 560px; /* Same width as the YouTube video */
         height: 60px; /* Adjust the height as needed */
@@ -58,6 +68,12 @@
       .button img {
         vertical-align: middle; /* Vertically align the image in the middle */
       }
+
+      /* Set a max-width for the biography container */
+      .bio-container {
+        max-width: 560px; /* Adjust as needed */
+        margin: 0 auto; /* Center the content horizontally */
+      }
     </style>
   </head>
 
@@ -66,7 +82,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container">
       <div class="row">
-        <div class="column" style="margin-top: 10%">
+        <div class="column">
           <!--
 
           ## Getting Started with LittleLink
@@ -100,18 +116,21 @@
 
           <!-- Short Bio -->
           <!-- <p>👋 Hello! Here's the places to find me!</p> -->
-          <p>
-            Josh Payne is a One-Man-Band from Cedar Rapids, Iowa, and takes his
-            years of performance experience from all genres to create a sound
-            like no other. Imagine hearing multiple voices and instruments and
-            seeing only one man on stage creating it all right before your eyes.
-            Josh has performed on stages all over the world from big to small,
-            creating music in any capacity he could. Josh co-produced his EP
-            "Free" and has been involved in multiple stage musicals from Rent to
-            Hairspray. With no formal training and years of trial and error,
-            Josh has perfected the art of crowd pleasing through multiple facets
-            of music and theatre
-          </p>
+          <!-- Wrap the biography text in a container -->
+          <div class="bio-container">
+            <p>
+              Josh Payne is a One-Man-Band from Cedar Rapids, Iowa, and takes
+              his years of performance experience from all genres to create a
+              sound like no other. Imagine hearing multiple voices and
+              instruments and seeing only one man on stage creating it all right
+              before your eyes. Josh has performed on stages all over the world
+              from big to small, creating music in any capacity he could. Josh
+              co-produced his EP "Free" and has been involved in multiple stage
+              musicals from Rent to Hairspray. With no formal training and years
+              of trial and error, Josh has perfected the art of crowd pleasing
+              through multiple facets of music and theatre.
+            </p>
+          </div>
 
           <!--
 
