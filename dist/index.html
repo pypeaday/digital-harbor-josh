@@ -141,6 +141,40 @@
             Email Me!
           </a>
           <br />
+          <button class="button" id="copyButton">
+            Copy Email to Clipboard if ☝️ didn't work!
+          </button>
+          <br />
+
+          <script>
+            document
+              .getElementById("copyButton")
+              .addEventListener("click", function () {
+                // Get the email address
+                var emailAddress = "JoshPayneMusic@gmail.com";
+
+                // Create a new textarea element
+                var tempTextarea = document.createElement("textarea");
+                tempTextarea.value = emailAddress;
+
+                // Append the textarea to the DOM
+                document.body.appendChild(tempTextarea);
+
+                // Select the text inside the textarea
+                tempTextarea.select();
+
+                try {
+                  // Attempt to copy the text to the clipboard
+                  document.execCommand("copy");
+                  alert("Email address copied to clipboard: " + emailAddress);
+                } catch (err) {
+                  console.error("Unable to copy to clipboard", err);
+                } finally {
+                  // Remove the temporary textarea
+                  document.body.removeChild(tempTextarea);
+                }
+              });
+          </script>
           <!-- Instagram -->
           <a
             class="button button-instagram"
