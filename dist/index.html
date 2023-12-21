@@ -130,51 +130,6 @@
             </p>
           </div>
 
-          <!-- Email -->
-          <a
-            class="button button-default"
-            href="mailto:JoshPayneMusic@gmail.com"
-            target="_blank"
-            rel="noopener"
-          >
-            <img class="icon" src="images/icons/email.svg" alt="Email Icon" />
-            Email Me!
-          </a>
-          <br />
-          <button class="button" id="copyButton">
-            Copy Email to Clipboard if ☝️ didn't work!
-          </button>
-          <br />
-
-          <script>
-            document
-              .getElementById("copyButton")
-              .addEventListener("click", function () {
-                // Get the email address
-                var emailAddress = "JoshPayneMusic@gmail.com";
-
-                // Create a new textarea element
-                var tempTextarea = document.createElement("textarea");
-                tempTextarea.value = emailAddress;
-
-                // Append the textarea to the DOM
-                document.body.appendChild(tempTextarea);
-
-                // Select the text inside the textarea
-                tempTextarea.select();
-
-                try {
-                  // Attempt to copy the text to the clipboard
-                  document.execCommand("copy");
-                  alert("Email address copied to clipboard: " + emailAddress);
-                } catch (err) {
-                  console.error("Unable to copy to clipboard", err);
-                } finally {
-                  // Remove the temporary textarea
-                  document.body.removeChild(tempTextarea);
-                }
-              });
-          </script>
           <!-- Instagram -->
           <a
             class="button button-instagram"
@@ -202,6 +157,53 @@
             />Facebook</a
           >
           <br />
+
+          <!-- Email -->
+          <a
+            class="button button-default"
+            href="mailto:JoshPayneMusic@gmail.com"
+            target="_blank"
+            rel="noopener"
+          >
+            <img class="icon" src="images/icons/email.svg" alt="Email Icon" />
+            Email Me!
+          </a>
+          <br />
+          <!-- commenting out this button that copies the emailAddress to the user's clipboard -->
+          <!-- <button class="button" id="copyButton"> -->
+          <!--   Copy Email to Clipboard if ☝️ didn't work! -->
+          <!-- </button> -->
+          <!-- <br /> -->
+          <!---->
+          <!-- <script> -->
+          <!--   document -->
+          <!--     .getElementById("copyButton") -->
+          <!--     .addEventListener("click", function () { -->
+          <!--       // Get the email address -->
+          <!--       var emailAddress = "JoshPayneMusic@gmail.com"; -->
+          <!---->
+          <!--       // Create a new textarea element -->
+          <!--       var tempTextarea = document.createElement("textarea"); -->
+          <!--       tempTextarea.value = emailAddress; -->
+          <!---->
+          <!--       // Append the textarea to the DOM -->
+          <!--       document.body.appendChild(tempTextarea); -->
+          <!---->
+          <!--       // Select the text inside the textarea -->
+          <!--       tempTextarea.select(); -->
+          <!---->
+          <!--       try { -->
+          <!--         // Attempt to copy the text to the clipboard -->
+          <!--         document.execCommand("copy"); -->
+          <!--         alert("Email address copied to clipboard: " + emailAddress); -->
+          <!--       } catch (err) { -->
+          <!--         console.error("Unable to copy to clipboard", err); -->
+          <!--       } finally { -->
+          <!--         // Remove the temporary textarea -->
+          <!--         document.body.removeChild(tempTextarea); -->
+          <!--       } -->
+          <!--     }); -->
+          <!-- </script> -->
 
           <!-- YouTube -->
           <a
@@ -287,7 +289,7 @@
           <br />
 
           <br />
-          <p>email: JoshPayneMusic@gmail.com</p>
+          <p>Email - JoshPayneMusic@Gmail.com</p>
           <p>
             Build your own by forking
             <a href="https://littlelink.io" target="_blank" rel="noopener"
