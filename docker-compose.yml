@@ -1,7 +1,7 @@
 version: "3"
-services: 
-  little-link:
+services:
+  digital-harbor-josh:
     build: .
-    container_name: littlelink-server
-    ports: 
+    container_name: digital_harbor_josh
+    ports:
       - 8889:80

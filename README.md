@@ -1,9 +1,5 @@
-# Josh's Little Link
+# Josh's Digital Harbor
 
-Josh's little link is deployed on [vercel](https://vercel.com/dashboard)
+Josh's digital harbor is deployed on github pages.
 See the page at [1man1.band](https://www.1man1.band) or [1man1band.com](https://www.1man1band.com)
 
-## todos
-
-2. finalize qr code
-3. fix background on mobile (maybe?)
