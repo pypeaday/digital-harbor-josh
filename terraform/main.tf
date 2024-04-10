@@ -10,18 +10,22 @@ provider "namecheap" {
 resource "namecheap_domain_records" "_1man1band-com" {
   domain     = "1man1band.com"
   email_type = "NONE"
-  record {
-    hostname = "@"
-    type     = "A"
-    # address    = ["185.189.108.153", "185.189.109.153", "185.189.110.153", "185.189.111.153"]
-    address = "76.76.21.21"
+
+  dynamic "record" {
+    # GH Pages servers
+    for_each = ["185.189.108.153", "185.189.109.153", "185.189.110.153", "185.189.111.153"]
+
+    content {
+      hostname = "@"
+      type     = "A"
+      address  = record.value
+    }
   }
 
   record {
     hostname = "www"
     type     = "CNAME"
-    # address    = "pypeaday.github.io"
-    address = "cname.vercel-dns.com"
+    address  = "pypeaday.github.io"
   }
 }
 
