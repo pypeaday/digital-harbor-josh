@@ -29,3 +29,14 @@ resource "namecheap_domain_records" "_1man1band-com" {
   }
 }
 
+resource "namecheap_domain_records" "_1man1-band" {
+  domain     = "1man1.band"
+  email_type = "NONE"
+
+  record {
+    hostname = "www"
+    type     = "CNAME"
+    address  = "1man1band.com"
+  }
+}
+
